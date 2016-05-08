@@ -11,7 +11,7 @@ public class TestNumbers {
 		double number1 = input.nextDouble();
 		System.out.print("Please enter another number: ");
 		double number2 = input.nextDouble();
-		
+		System.out.println("---------------------------------");
 		System.out.println("Press 1 for doing addition ");
 		System.out.println("Press 2 for doing subtraction ");
 		System.out.println("Press 3 for doing multiplication ");
@@ -21,16 +21,27 @@ public class TestNumbers {
 		System.out.println("---------------------------------");
 		BigDecimalNum operation = new BigDecimalNum(number1,number2);
 		switch(operateType){
-			case 1:System.out.println(number1 + " + " + number2 + " = " + operation.add());
-					break;
-			case 2:System.out.println(number1 + " - " + number2 + " = " + operation.subtract());
-					break;
-			case 3:System.out.println(number1 + " * " + number2 + " = " + operation.multiply());
-					break;
-			case 4:System.out.println(number1 + " / " + number2 + " = " + operation.divide());
-					break;
+			case 1:
+				System.out.println(number1 + " + " + number2 + " = " + operation.add());
+				break;
+			case 2:
+				System.out.println(number1 + " - " + number2 + " = " + operation.subtract());
+				break;
+			case 3:
+				System.out.println(number1 + " * " + number2 + " = " + operation.multiply());
+				break;
+			case 4:
+				System.out.println("Please enter the scale after decimal point: ");
+				int scaleAfterPoint = input.nextInt();
+				if(scaleAfterPoint<0){
+					System.out.println("Your input is illegal!");
+				}
+				else{
+					System.out.println(number1 + " / " + number2 + " = " + operation.divide(scaleAfterPoint));
+				}
+				break;
 			default:
-		
+				System.exit(1);
 		}
 	}
 }

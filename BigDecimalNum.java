@@ -12,7 +12,6 @@ class BigDecimalNum{
 	}	
 
 	double add(){
-
 		return num1.add(num2).doubleValue();
 	}
 
@@ -24,7 +23,7 @@ class BigDecimalNum{
 		return num1.multiply(num2).doubleValue();
 	}
 
-	double divide(){
-		return 0;
+	double divide(int scaleAfterPoint){
+		return num1.divide(num2,scaleAfterPoint,BigDecimal.ROUND_HALF_UP).doubleValue();
 	}
 }
