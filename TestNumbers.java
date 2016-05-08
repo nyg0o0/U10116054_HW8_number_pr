@@ -16,7 +16,8 @@ public class TestNumbers {
 		System.out.println("Press 2 for doing subtraction ");
 		System.out.println("Press 3 for doing multiplication ");
 		System.out.println("Press 4 for doing division ");
-		System.out.print("Your choice:");
+		System.out.println("---------------------------------");
+		System.out.print("Your choice: ");
 		int operateType = input.nextInt();
 		System.out.println("---------------------------------");
 		BigDecimalNum operation = new BigDecimalNum(number1,number2);
@@ -31,9 +32,13 @@ public class TestNumbers {
 				System.out.println(number1 + " * " + number2 + " = " + operation.multiply());
 				break;
 			case 4:
+				if( number2 == 0 ){
+					System.out.println("You can not divide by zero!!");
+					System.exit(1);
+				}
 				System.out.println("Please enter the scale after decimal point: ");
 				int scaleAfterPoint = input.nextInt();
-				if(scaleAfterPoint<0){
+				if( scaleAfterPoint < 0 ){
 					System.out.println("Your input is illegal!");
 				}
 				else{
