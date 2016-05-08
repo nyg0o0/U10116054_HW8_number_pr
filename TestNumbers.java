@@ -45,7 +45,7 @@ public class TestNumbers {
 					System.exit(1);
 				}
 				
-				// to make it more precise, scan the scale from user input
+				// to make it more precisely, scan the scale from user input
 				System.out.print("Please enter the scale after decimal point: ");
 				int scaleAfterPoint = input.nextInt();
 				if( scaleAfterPoint < 0 ){	// illegal scale
