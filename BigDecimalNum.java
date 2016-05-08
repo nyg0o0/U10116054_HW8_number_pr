@@ -1,12 +1,11 @@
 import java.math.BigDecimal;
 class BigDecimalNum{
-	BigDecimal num1;
-	BigDecimal num2;
+BigDecimal num1;
+BigDecimal num2;
 
-BigDecimalNum(BigDecimal newNum1, BigDecimal newNum2){
-	num1 = new BigDecimal(newNum1);
-	num2 = new BigDecimal(Double.toString(newNum2));	
-	
+BigDecimalNum(double number1,double number2){
+	num1 = new BigDecimal(Double.toString(number1));
+	num2 = new BigDecimal(Double.toString(number2));
 }	
 
 double add(double number1,double number2){
@@ -23,6 +22,6 @@ double multiply(double number1,double number2){
 }
 
 double divide(double number1,double number2){
-
+ return 0;
 }
 }
