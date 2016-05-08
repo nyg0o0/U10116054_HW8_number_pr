@@ -1,18 +1,28 @@
 import java.math.BigDecimal;
 class BigDecimalNum{
-	BigDecimal num1 = new BigDecimal(Double.toString(number1));
-	BigDecimal num2 = new BigDecimal(Double.toString(number2));
-}
+	BigDecimal num1;
+	BigDecimal num2;
 
-public static double add(double number1,double number2){
+BigDecimalNum(BigDecimal newNum1, BigDecimal newNum2){
+	num1 = new BigDecimal(newNum1);
+	num2 = new BigDecimal(Double.toString(newNum2));	
+	
+}	
+
+double add(double number1,double number2){
 
 	return num1.add(num2).doubleValue();
 }
 
-public static double sub(double number1,double number2){
+double subtract(double number1,double number2){
 	return num1.subtract(num2).doubleValue();
 }
 
-public static doublemul(double number1,double number2){
+double multiply(double number1,double number2){
 	return num1.multiply(num2).doubleValue();
+}
+
+double divide(double number1,double number2){
+
+}
 }
