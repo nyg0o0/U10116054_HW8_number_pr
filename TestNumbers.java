@@ -36,7 +36,7 @@ public class TestNumbers {
 					System.out.println("You can not divide by zero!!");
 					System.exit(1);
 				}
-				System.out.println("Please enter the scale after decimal point: ");
+				System.out.print("Please enter the scale after decimal point: ");
 				int scaleAfterPoint = input.nextInt();
 				if( scaleAfterPoint < 0 ){
 					System.out.println("Your input is illegal!");
