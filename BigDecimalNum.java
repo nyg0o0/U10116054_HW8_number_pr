@@ -11,20 +11,20 @@ class BigDecimalNum{
 		num2 = new BigDecimal(Double.toString(number2));
 	}	
 
-	double add(double number1,double number2){
+	double add(){
 
 		return num1.add(num2).doubleValue();
 	}
 
-	double subtract(double number1,double number2){
+	double subtract(){
 		return num1.subtract(num2).doubleValue();
 	}
 
-	double multiply(double number1,double number2){
+	double multiply(){
 		return num1.multiply(num2).doubleValue();
 	}
 
-	double divide(double number1,double number2){
+	double divide(){
 		return 0;
 	}
 }
